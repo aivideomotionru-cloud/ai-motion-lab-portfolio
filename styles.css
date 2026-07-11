@@ -222,12 +222,32 @@ h3 {
   background: #111618;
 }
 
+.featured-case--wide {
+  grid-template-columns: minmax(420px, 720px) 1fr;
+}
+
+.case-video-pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.case-video-pair figure {
+  margin: 0;
+}
+
 .featured-case video {
   width: 100%;
   aspect-ratio: 9 / 16;
   border-radius: 8px;
   background: #050607;
   object-fit: cover;
+}
+
+.case-video-pair figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .featured-case p {
@@ -365,6 +385,10 @@ h3 {
   .case-grid,
   .services,
   .featured-case {
+    grid-template-columns: 1fr;
+  }
+
+  .case-video-pair {
     grid-template-columns: 1fr;
   }
 
