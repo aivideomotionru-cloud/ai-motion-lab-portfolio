@@ -131,6 +131,25 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/110656408" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <script>
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href]');
+        var href = link ? link.getAttribute('href') || '' : '';
+        var goal = '';
+
+        if (href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
+        if (href.indexOf('instagram.com/igor_ai_motion') !== -1) goal = 'contact_instagram';
+        if (href.indexOf('mailto:') === 0) goal = 'contact_email';
+        if (href.indexOf('.mp4') !== -1) goal = 'open_video';
+
+        if (goal && typeof ym === 'function') {
+          ym(110656408, 'reachGoal', goal, {
+            href: link.href,
+            text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+      });
+    </script>
   </head>
   <body>
     <header class="hero">
