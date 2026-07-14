@@ -149,6 +149,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   padding: 12px 18px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -164,6 +165,19 @@ h3 {
 .button--ghost {
   background: rgba(255, 255, 255, 0.06);
   color: var(--text);
+}
+
+.button--telegram {
+  border-color: #2aabee;
+  background: #2aabee;
+  color: #ffffff;
+}
+
+.button__icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+  fill: currentColor;
 }
 
 .strip {
