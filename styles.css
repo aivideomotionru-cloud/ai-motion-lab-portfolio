@@ -173,11 +173,25 @@ h3 {
   color: #ffffff;
 }
 
+.button--instagram {
+  border-color: #e1306c;
+  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 48%, #8134af 100%);
+  color: #ffffff;
+}
+
 .button__icon {
   width: 18px;
   height: 18px;
   flex: 0 0 auto;
   fill: currentColor;
+}
+
+.button__icon--stroke {
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 .strip {
