@@ -1,0 +1,22 @@
+# AI Motion Lab
+
+AI Motion Lab creates AI video, motion design, 3D product visuals, advertising videos, animated covers, and visual packs for brands, bloggers, producers, agencies, and businesses.
+
+Main site: https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/
+Language: Russian
+Market: Russia
+Contact: aivideo.motion.ru@gmail.com
+
+Services:
+- AI advertising videos for Reels, Shorts, Stories, and social ads
+- Motion design packs for creators and brands
+- 3D product visuals and packshots
+- Video concepts, scripts, covers, and visual style development
+
+Portfolio examples:
+- NOIR AURA: perfume advertising video
+- EMBER TABLE: restaurant promo video with Russian voiceover
+- PET MATE: pet store promo video
+- LUMINA SKIN: beauty product cinematic ad
+- AEROFORM: 3D product shot
+- NOVA HALL: event venue promo
