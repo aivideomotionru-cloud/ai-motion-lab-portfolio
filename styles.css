@@ -63,7 +63,7 @@ a {
 .nav {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 24px 0;
+  padding: 18px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,22 +77,42 @@ a {
 
 .nav__links {
   display: flex;
-  gap: 18px;
-  color: var(--muted);
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(6, 10, 12, 0.66);
+  box-shadow: 0 16px 46px rgba(0, 0, 0, 0.3);
+  color: rgba(245, 247, 242, 0.82);
   font-size: 14px;
+  font-weight: 750;
+  backdrop-filter: blur(14px);
+}
+
+.nav__links a {
+  padding: 8px 10px;
+  border-radius: 7px;
 }
 
 .nav__links a:hover {
   color: var(--text);
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .nav__link--featured {
-  margin: -8px 0;
-  padding: 8px 12px;
-  border: 1px solid rgba(50, 212, 231, 0.45);
-  border-radius: 8px;
-  background: rgba(50, 212, 231, 0.12);
-  color: var(--text) !important;
+  padding: 10px 15px !important;
+  border: 1px solid var(--cyan);
+  background: var(--cyan);
+  box-shadow: 0 0 0 3px rgba(50, 212, 231, 0.16), 0 14px 32px rgba(50, 212, 231, 0.24);
+  color: #071113 !important;
+  font-weight: 950;
+  white-space: nowrap;
+}
+
+.nav__link--featured:hover {
+  background: #6eeeff !important;
+  color: #071113 !important;
 }
 
 .hero__content {
