@@ -14,6 +14,7 @@ Services:
 - Video concepts, scripts, covers, and visual style development
 
 Portfolio examples:
+- AI Motion Lab: Direct/Reels self-promo video for client outreach
 - NOIR AURA: perfume advertising video
 - EMBER TABLE: restaurant promo video with Russian voiceover
 - PET MATE: pet store promo video
