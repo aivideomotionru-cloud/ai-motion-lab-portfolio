@@ -340,7 +340,22 @@ h3 {
     #111618;
 }
 
-.page-entry__card--soon h3 {
+.page-entry__card--motion {
+  border-color: rgba(255, 184, 77, 0.48);
+  box-shadow: 0 22px 70px rgba(255, 184, 77, 0.06);
+}
+
+.page-entry__card--motion::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(8, 11, 13, 0.92) 0%, rgba(8, 11, 13, 0.74) 52%, rgba(8, 11, 13, 0.26) 100%),
+    linear-gradient(0deg, rgba(8, 11, 13, 0.84) 0%, rgba(8, 11, 13, 0.14) 60%);
+}
+
+.page-entry__card--soon h3,
+.page-entry__card--motion h3 {
   font-size: clamp(24px, 3vw, 34px);
 }
 
