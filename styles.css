@@ -694,6 +694,42 @@ h3 {
   min-width: 220px;
 }
 
+.service-brief {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1fr);
+  gap: 22px;
+  align-items: start;
+  padding-top: 42px;
+  padding-bottom: 42px;
+  border-top: 1px solid var(--line);
+}
+
+.service-brief h2 {
+  font-size: clamp(28px, 4vw, 44px);
+}
+
+.brief-list {
+  display: grid;
+  gap: 10px;
+}
+
+.brief-list span {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.brief-button {
+  width: fit-content;
+  grid-column: 2;
+}
+
 .service-hero {
   min-height: 78svh;
 }
@@ -855,6 +891,15 @@ h3 {
   .contact {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .service-brief {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-button {
+    width: 100%;
+    grid-column: auto;
   }
 
   .contact__actions {
