@@ -419,6 +419,21 @@ h3 {
   color: #f2f2e8;
 }
 
+.seo-copy {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 32px;
+  padding: 26px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.seo-copy p {
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
 .services {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -549,6 +564,7 @@ h3 {
 
   .strip,
   .case-grid,
+  .seo-copy,
   .services,
   .packages,
   .workflow,
