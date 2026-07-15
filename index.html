@@ -48,6 +48,7 @@
             "email": "aivideo.motion.ru@gmail.com",
             "sameAs": [
               "https://telegram.me/igor_voit",
+              "https://t.me/ai_motion_lab_ru",
               "https://www.instagram.com/igor_ai_motion/"
             ],
             "areaServed": "Россия",
@@ -150,6 +151,7 @@
         var goal = '';
 
         if (href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
+        if (href.indexOf('t.me/ai_motion_lab_ru') !== -1) goal = 'contact_telegram_channel';
         if (href.indexOf('instagram.com/igor_ai_motion') !== -1) goal = 'contact_instagram';
         if (href.indexOf('mailto:') === 0) goal = 'contact_email';
         if (href.indexOf('.mp4') !== -1) goal = 'open_video';
@@ -633,6 +635,12 @@
               <path d="M21.9 4.6 18.7 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.5l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 3c.9-.3 1.6.2 1.3 1.6Z" />
             </svg>
             Написать в Telegram
+          </a>
+          <a class="button button--telegram" href="https://t.me/ai_motion_lab_ru" target="_blank" rel="noopener">
+            <svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21.9 4.6 18.7 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.5l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 3c.9-.3 1.6.2 1.3 1.6Z" />
+            </svg>
+            Смотреть канал
           </a>
           <a class="button button--instagram" href="https://www.instagram.com/igor_ai_motion/" target="_blank" rel="noopener">
             <svg class="button__icon button__icon--stroke" viewBox="0 0 24 24" aria-hidden="true">
