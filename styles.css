@@ -243,11 +243,11 @@ h3 {
 }
 
 .page-entry__card {
-  min-height: 340px;
+  min-height: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 26px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -275,6 +275,7 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .page-entry__card > *:not(img) {
@@ -286,6 +287,10 @@ h3 {
   max-width: 540px;
   margin-bottom: 14px;
   font-size: clamp(28px, 4vw, 48px);
+}
+
+.page-entry__card .case-card__tag {
+  margin-bottom: 16px;
 }
 
 .page-entry__card p {
