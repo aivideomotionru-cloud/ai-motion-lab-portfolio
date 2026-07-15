@@ -258,7 +258,7 @@ h3 {
 
 .page-entry__grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
 }
 
@@ -345,7 +345,13 @@ h3 {
   box-shadow: 0 22px 70px rgba(255, 184, 77, 0.06);
 }
 
-.page-entry__card--motion::after {
+.page-entry__card--product {
+  border-color: rgba(184, 241, 90, 0.48);
+  box-shadow: 0 22px 70px rgba(184, 241, 90, 0.06);
+}
+
+.page-entry__card--motion::after,
+.page-entry__card--product::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -355,7 +361,8 @@ h3 {
 }
 
 .page-entry__card--soon h3,
-.page-entry__card--motion h3 {
+.page-entry__card--motion h3,
+.page-entry__card--product h3 {
   font-size: clamp(24px, 3vw, 34px);
 }
 
