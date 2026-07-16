@@ -606,6 +606,32 @@ h3 {
   line-height: 1.55;
 }
 
+.service-seo {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.service-seo__grid div,
+.faq-list article {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.faq-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.faq-list p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
 .packages {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -847,6 +873,7 @@ h3 {
   .case-grid,
   .seo-copy,
   .services,
+  .faq-list,
   .packages,
   .workflow,
   .section__head--cases,
