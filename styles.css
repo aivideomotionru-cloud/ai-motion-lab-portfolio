@@ -791,6 +791,56 @@ h3 {
   font-weight: 900;
 }
 
+.content-management {
+  border-top: 1px solid var(--line);
+}
+
+.management-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.management-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.management-card .content-plan__table {
+  margin: 12px -18px -18px;
+}
+
+.reply-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.reply-list div {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #111618;
+}
+
+.reply-list span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.reply-list p {
+  margin-bottom: 0;
+  color: rgba(245, 247, 242, 0.84);
+  line-height: 1.45;
+}
+
 .launch-offer {
   display: grid;
   grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
@@ -1097,6 +1147,7 @@ h3 {
   .seo-copy,
   .services,
   .content-plan-grid,
+  .management-grid,
   .faq-list,
   .spec-offer,
   .spec-preview__grid,
