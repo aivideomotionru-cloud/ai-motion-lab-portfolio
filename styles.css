@@ -686,6 +686,44 @@ h3 {
   line-height: 1.45;
 }
 
+.spec-preview {
+  padding-top: 42px;
+}
+
+.spec-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.spec-preview article {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.spec-preview video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  display: block;
+  margin-bottom: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: #07090a;
+  object-fit: cover;
+}
+
+.spec-preview h3 {
+  font-size: 19px;
+}
+
+.spec-preview p {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
 .launch-offer {
   display: grid;
   grid-template-columns: minmax(240px, 0.85fr) minmax(0, 1.15fr);
@@ -993,6 +1031,7 @@ h3 {
   .services,
   .faq-list,
   .spec-offer,
+  .spec-preview__grid,
   .launch-offer,
   .packages,
   .workflow,
