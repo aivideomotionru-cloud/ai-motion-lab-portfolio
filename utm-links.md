@@ -23,6 +23,15 @@ https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=inst
 Instagram Direct:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=direct&utm_campaign=ai_motion_portfolio&utm_content=dm
 
+VK community:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=community
+
+VK post:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=post
+
+VK clip:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=clip
+
 Dzen post:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=dzen&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=post
 
@@ -34,6 +43,20 @@ https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=yout
 
 QR code:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=qr&utm_medium=offline&utm_campaign=ai_motion_portfolio&utm_content=portfolio
+
+## Spec concept links
+
+Manual direct pitch:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=manual&utm_medium=direct&utm_campaign=spec_concept&utm_content=first_touch#spec-concept
+
+VK spec post:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&utm_medium=social&utm_campaign=spec_concept&utm_content=post#spec-concept
+
+Telegram spec post:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=telegram&utm_medium=social&utm_campaign=spec_concept&utm_content=post#spec-concept
+
+Instagram Direct spec:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=direct&utm_campaign=spec_concept&utm_content=dm#spec-concept
 
 ## How to read in Yandex Metrika
 
