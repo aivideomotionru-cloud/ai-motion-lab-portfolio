@@ -29,6 +29,9 @@ https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=dzen
 YouTube Shorts:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=youtube&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=shorts
 
+YouTube channel profile/link:
+https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=youtube&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=channel_link
+
 QR code:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=qr&utm_medium=offline&utm_campaign=ai_motion_portfolio&utm_content=portfolio
 
