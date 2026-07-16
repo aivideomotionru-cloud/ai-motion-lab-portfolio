@@ -952,44 +952,42 @@
           </p>
         </div>
         <div class="management-grid">
-          <article class="management-card">
+          <article class="management-card management-card--audit">
             <p class="case-card__tag">Анализ готового контента</p>
             <h3>Мини-аудит карточек и соцсетей</h3>
-            <div class="content-plan__table" role="region" aria-label="Пример аудита готового контента">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Что проверяю</th>
-                    <th>Проблема</th>
-                    <th>Что исправить</th>
-                    <th>Приоритет</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Карточка товара</td>
-                    <td>Не видно главной выгоды.</td>
-                    <td>Переписать первый экран и добавить 3 преимущества.</td>
-                    <td>Высокий</td>
-                  </tr>
-                  <tr>
-                    <td>Фото/видео</td>
-                    <td>Мало сценариев использования.</td>
-                    <td>Добавить короткий Reels и крупные детали продукта.</td>
-                    <td>Высокий</td>
-                  </tr>
-                  <tr>
-                    <td>Описание</td>
-                    <td>Текст похож на техническую справку.</td>
-                    <td>Разделить на пользу, характеристики, доставку и FAQ.</td>
-                    <td>Средний</td>
-                  </tr>
-                </tbody>
-              </table>
+            <p class="management-card__lead">
+              Быстро нахожу слабые места в карточках, визуалах и описаниях, а затем превращаю замечания
+              в понятный список правок.
+            </p>
+            <div class="audit-list" aria-label="Пример аудита готового контента">
+              <div class="audit-item">
+                <div class="audit-item__top">
+                  <span>Карточка товара</span>
+                  <strong>Высокий</strong>
+                </div>
+                <p><b>Проблема:</b> не видно главной выгоды на первом экране.</p>
+                <p><b>Правка:</b> переписать оффер и добавить 3 преимущества рядом с фото.</p>
+              </div>
+              <div class="audit-item">
+                <div class="audit-item__top">
+                  <span>Фото и видео</span>
+                  <strong>Высокий</strong>
+                </div>
+                <p><b>Проблема:</b> мало сценариев использования, товар выглядит абстрактно.</p>
+                <p><b>Правка:</b> добавить короткий Reels, крупные детали и кадр “в жизни”.</p>
+              </div>
+              <div class="audit-item">
+                <div class="audit-item__top">
+                  <span>Описание</span>
+                  <strong>Средний</strong>
+                </div>
+                <p><b>Проблема:</b> текст похож на техническую справку.</p>
+                <p><b>Правка:</b> разделить на пользу, характеристики, доставку и FAQ.</p>
+              </div>
             </div>
           </article>
 
-          <article class="management-card">
+          <article class="management-card management-card--replies">
             <p class="case-card__tag">Взаимодействие с пользователями</p>
             <h3>Шаблоны ответов для комментариев и Direct</h3>
             <div class="reply-list">
@@ -1008,46 +1006,35 @@
             </div>
           </article>
 
-          <article class="management-card">
+          <article class="management-card management-card--database">
             <p class="case-card__tag">Наполнение базы данных</p>
             <h3>Шаблон структуры для интернет-магазина</h3>
-            <div class="content-plan__table" role="region" aria-label="Пример структуры базы товаров">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Поле</th>
-                    <th>Пример</th>
-                    <th>Зачем нужно</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Название</td>
-                    <td>Настольная лампа NORD 40</td>
-                    <td>Поиск и карточка товара.</td>
-                  </tr>
-                  <tr>
-                    <td>Категория</td>
-                    <td>Свет / рабочее место</td>
-                    <td>Фильтры и навигация.</td>
-                  </tr>
-                  <tr>
-                    <td>Описание</td>
-                    <td>Короткий оффер + характеристики.</td>
-                    <td>Понятная покупателю карточка.</td>
-                  </tr>
-                  <tr>
-                    <td>Медиа</td>
-                    <td>Фото, видео, обложка, alt-текст</td>
-                    <td>Визуал, SEO и публикации.</td>
-                  </tr>
-                  <tr>
-                    <td>Статус</td>
-                    <td>Черновик / готово / опубликовано</td>
-                    <td>Контроль процесса.</td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="database-list" aria-label="Пример структуры базы товаров">
+              <div>
+                <span>Название</span>
+                <strong>Настольная лампа NORD 40</strong>
+                <p>Поиск и карточка товара</p>
+              </div>
+              <div>
+                <span>Категория</span>
+                <strong>Свет / рабочее место</strong>
+                <p>Фильтры и навигация</p>
+              </div>
+              <div>
+                <span>Описание</span>
+                <strong>Оффер + характеристики</strong>
+                <p>Понятная карточка</p>
+              </div>
+              <div>
+                <span>Медиа</span>
+                <strong>Фото, видео, обложка, alt</strong>
+                <p>Визуал, SEO, публикации</p>
+              </div>
+              <div>
+                <span>Статус</span>
+                <strong>Черновик / готово</strong>
+                <p>Контроль процесса</p>
+              </div>
             </div>
           </article>
         </div>
