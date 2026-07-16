@@ -77,6 +77,7 @@ a {
 
 .nav__links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 8px;
   padding: 8px;
@@ -592,7 +593,7 @@ h3 {
 
 .services {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 18px;
 }
 
@@ -722,6 +723,72 @@ h3 {
 .spec-preview p {
   color: var(--muted);
   line-height: 1.5;
+}
+
+.content-plans {
+  border-top: 1px solid var(--line);
+}
+
+.content-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.content-plan {
+  min-width: 0;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+}
+
+.content-plan__head {
+  padding: 18px 18px 8px;
+}
+
+.content-plan__head p:last-child {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.content-plan__table {
+  min-width: 0;
+  overflow-x: auto;
+}
+
+.content-plan table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.content-plan th,
+.content-plan td {
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.content-plan th {
+  color: var(--cyan);
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content-plan td {
+  color: rgba(245, 247, 242, 0.84);
+}
+
+.content-plan td:first-child {
+  color: var(--text);
+  font-weight: 900;
 }
 
 .launch-offer {
@@ -1005,7 +1072,7 @@ h3 {
 
   .nav__links {
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .nav__link--featured {
@@ -1029,6 +1096,7 @@ h3 {
   .case-grid,
   .seo-copy,
   .services,
+  .content-plan-grid,
   .faq-list,
   .spec-offer,
   .spec-preview__grid,
