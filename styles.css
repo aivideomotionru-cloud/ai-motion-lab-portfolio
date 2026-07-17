@@ -468,6 +468,10 @@ h3 {
   grid-template-columns: minmax(420px, 720px) 1fr;
 }
 
+.featured-case--horizontal {
+  grid-template-columns: minmax(420px, 760px) 1fr;
+}
+
 .case-video-pair {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -485,6 +489,10 @@ h3 {
   background: #050607;
   object-fit: cover;
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+}
+
+.featured-case--horizontal video {
+  aspect-ratio: 16 / 9;
 }
 
 .featured-case--hero h3 {
