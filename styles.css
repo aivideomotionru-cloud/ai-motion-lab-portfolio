@@ -116,6 +116,18 @@ a {
   color: #071113 !important;
 }
 
+.nav__link--youtube {
+  border: 1px solid rgba(255, 184, 77, 0.52);
+  background: rgba(255, 184, 77, 0.12);
+  color: #ffe2ad !important;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.nav__link--youtube:hover {
+  background: rgba(255, 184, 77, 0.22) !important;
+}
+
 .hero__content {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -411,6 +423,74 @@ h3 {
   color: var(--muted);
   font-size: 18px;
   line-height: 1.5;
+}
+
+.youtube-offer {
+  display: grid;
+  grid-template-columns: minmax(420px, 1.08fr) minmax(320px, 0.92fr);
+  gap: 28px;
+  align-items: center;
+  padding-top: 54px;
+  padding-bottom: 54px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.youtube-offer__media {
+  padding: 14px;
+  border: 1px solid rgba(255, 184, 77, 0.4);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 184, 77, 0.12), rgba(50, 212, 231, 0.08)),
+    #101416;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.32);
+}
+
+.youtube-offer video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: 8px;
+  background: #050607;
+  object-fit: cover;
+}
+
+.youtube-offer__copy h2 {
+  font-size: clamp(32px, 4vw, 54px);
+}
+
+.youtube-offer__copy p {
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.youtube-offer__points {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.youtube-offer__points span {
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.045);
+  color: rgba(245, 247, 242, 0.86);
+  line-height: 1.35;
+  font-weight: 750;
+}
+
+.youtube-offer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
 }
 
 .case-metrics {
@@ -1262,6 +1342,7 @@ h3 {
   .case-grid,
   .seo-copy,
   .services,
+  .youtube-offer,
   .content-plan-grid,
   .management-grid,
   .faq-list,
@@ -1289,6 +1370,10 @@ h3 {
   }
 
   .case-video-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .youtube-offer__points {
     grid-template-columns: 1fr;
   }
 
