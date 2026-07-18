@@ -327,6 +327,7 @@
             controls
             playsinline
             preload="metadata"
+            data-goal="youtube_teaser_video_play"
             poster="assets/youtube-horizontal-demo/obsidian-map-preview.jpg"
             src="assets/youtube-horizontal-demo/obsidian-map-full-35s-music2-voice-clear.mp4"
           ></video>
@@ -346,8 +347,8 @@
             <span>Готово для YouTube и презентации</span>
           </div>
           <div class="youtube-offer__actions">
-            <a class="button button--primary" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%20YouTube%2016%3A9%20AI-teaser.%0A%0A%D0%9D%D0%B8%D1%88%D0%B0%3A%0A%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%81%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B8%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A" target="_blank" rel="noopener">Обсудить YouTube teaser</a>
-            <a class="button button--ghost" href="#cases">Смотреть кейс</a>
+            <a class="button button--primary" data-goal="youtube_teaser_telegram_click" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%20YouTube%2016%3A9%20AI-teaser.%0A%0A%D0%9D%D0%B8%D1%88%D0%B0%3A%0A%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%81%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B8%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A" target="_blank" rel="noopener">Обсудить YouTube teaser</a>
+            <a class="button button--ghost" data-goal="youtube_teaser_case_click" href="#cases">Смотреть кейс</a>
           </div>
         </div>
       </section>
@@ -1227,6 +1228,16 @@
         if (countNode && cases) {
           countNode.textContent = cases.querySelectorAll('video').length;
         }
+
+        document.querySelectorAll('video[data-goal]').forEach(function (video) {
+          video.addEventListener('play', function () {
+            if (video.dataset.goalTracked || typeof ym !== 'function') return;
+            video.dataset.goalTracked = 'true';
+            ym(110656408, 'reachGoal', video.dataset.goal, {
+              src: video.currentSrc || video.getAttribute('src') || ''
+            });
+          });
+        });
       });
     </script>
   </body>
