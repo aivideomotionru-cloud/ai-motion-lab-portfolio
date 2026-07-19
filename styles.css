@@ -221,6 +221,12 @@ h3 {
   color: #ffffff;
 }
 
+.button--vk {
+  border-color: #0077ff;
+  background: #0077ff;
+  color: #ffffff;
+}
+
 .button__icon {
   width: 18px;
   height: 18px;
