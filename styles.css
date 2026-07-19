@@ -1316,6 +1316,35 @@ h3 {
   line-height: 1.55;
 }
 
+.preview-page {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 32px 20px;
+}
+
+.preview-layout {
+  width: min(980px, 100%);
+  display: grid;
+  grid-template-columns: minmax(250px, 360px) 1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.preview-layout video {
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #050607;
+  object-fit: cover;
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.34);
+}
+
+.preview-copy {
+  max-width: 560px;
+}
+
 @media (max-width: 820px) {
   .nav {
     align-items: flex-start;
@@ -1444,5 +1473,13 @@ h3 {
 
   .service-stat {
     min-height: auto;
+  }
+
+  .preview-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .preview-copy h1 {
+    font-size: 38px;
   }
 }
