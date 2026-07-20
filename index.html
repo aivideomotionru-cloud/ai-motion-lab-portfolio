@@ -243,8 +243,6 @@
           <a class="nav__link--youtube" href="#youtube-video">YouTube 16:9</a>
           <a href="#services">Услуги</a>
           <a class="nav__link--featured" href="#service-pages">Страницы услуг</a>
-          <a href="#content-plans">Контент-планы</a>
-          <a href="#content-management">Контент-менеджмент</a>
           <a href="#packages">Пакеты</a>
           <a href="#contact">Контакты</a>
         </div>
@@ -260,6 +258,7 @@
         <div class="hero__actions">
           <a class="button button--primary" href="#contact">Обсудить заказ</a>
           <a class="button button--ghost" href="#spec-concept">5 сек spec-концепт</a>
+          <a class="button button--ghost" href="#all-cases">Все ролики</a>
           <a class="button button--telegram" href="https://telegram.me/igor_voit" target="_blank" rel="noopener">
             <svg class="button__icon" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M21.9 4.6 18.7 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.5l-5-1.6c-1.1-.3-1.1-1.1.2-1.6L20.6 3c.9-.3 1.6.2 1.3 1.6Z" />
@@ -292,7 +291,40 @@
         <span>YouTube 16:9 тизеры</span>
       </section>
 
-      <section class="section page-entry" id="service-pages" aria-labelledby="service-pages-title">
+      <section class="reels-showcase" id="cases" aria-labelledby="reels-showcase-title">
+        <div class="reels-showcase__head">
+          <div>
+            <p class="eyebrow">Reels / Shorts / Stories</p>
+            <h2 id="reels-showcase-title">4 коротких вертикальных ролика</h2>
+          </div>
+          <a class="button button--ghost" href="#all-cases">Показать все кейсы</a>
+        </div>
+        <div class="reels-showcase__grid">
+          <article>
+            <video controls playsinline preload="none" poster="assets/ai-motion-lab/ai-motion-lab-direct-reels-preview.jpg" src="assets/ai-motion-lab/ai-motion-lab-direct-reels-web.mp4"></video>
+            <h3>AI MOTION LAB</h3>
+            <p>Ролик для Direct и Reels</p>
+          </article>
+          <article>
+            <video controls playsinline preload="none" poster="assets/ember-table/ember-table-vlad-elevenlabs-preview.jpg" src="assets/ember-table/ember-table-vlad-elevenlabs-music2-web.mp4"></video>
+            <h3>EMBER TABLE</h3>
+            <p>Ресторан с русской озвучкой</p>
+          </article>
+          <article>
+            <video controls playsinline preload="none" poster="assets/pet-mate/pet-mate-preview.jpg" src="assets/pet-mate/pet-mate-store-ad-15s-igor-music4-web.mp4"></video>
+            <h3>PET MATE</h3>
+            <p>Промо зоомагазина</p>
+          </article>
+          <article>
+            <video controls playsinline preload="none" poster="assets/steel-cut/steel-cut-preview.jpg" src="assets/steel-cut/steel-cut-ad-15s-hard-rock-web.mp4"></video>
+            <h3>STEEL CUT</h3>
+            <p>Промо барбершопа</p>
+          </article>
+        </div>
+      </section>
+
+      <details class="section section--compact compact-details page-entry" id="service-pages" aria-labelledby="service-pages-title">
+        <summary>
         <div class="page-entry__head">
           <p class="eyebrow">Страницы услуг</p>
           <h2 id="service-pages-title">Отдельные страницы под конкретные задачи</h2>
@@ -300,6 +332,7 @@
             Здесь собраны посадочные страницы, которые объясняют услугу, показывают примеры и ведут к заявке.
           </p>
         </div>
+        </summary>
         <div class="page-entry__grid">
           <a class="page-entry__card page-entry__card--primary" href="ai-video-for-business.html">
             <img src="assets/ai-motion-lab/ai-motion-lab-direct-reels-preview.jpg" alt="AI-видео для бизнеса" />
@@ -339,41 +372,68 @@
             <span class="page-entry__button">Открыть страницу</span>
           </a>
         </div>
-      </section>
+      </details>
 
-      <section class="section youtube-offer" id="youtube-video" aria-labelledby="youtube-video-title">
-        <div class="youtube-offer__media">
-          <video
-            controls
-            playsinline
-            preload="metadata"
-            data-goal="youtube_teaser_video_play"
-            poster="assets/black-hole-video/checks/check-02s.png"
-            src="assets/black-hole-video/black-hole-60s-lipsync-titles-draft.mp4"
-          ></video>
-        </div>
-        <div class="youtube-offer__copy">
-          <p class="eyebrow">Для продюсеров YouTube</p>
-          <h2 id="youtube-video-title">Горизонтальные AI-видео под научпоп, мини-фильмы и документалки</h2>
-          <p>
-            Делаю тестовые 16:9 фрагменты для YouTube-ниш: сценарий, storyboard, генерация сцен,
-            ведущий с lip sync, озвучка, музыка, титры и монтаж. Формат удобен для проверки идеи перед
-            длинным выпуском или для питча канала продюсеру.
-          </p>
-          <div class="youtube-offer__points" aria-label="Что входит в YouTube teaser">
-            <span>20-60 сек тестового фрагмента</span>
-            <span>Fantasy / documentary / mini-film</span>
-            <span>Английская или русская озвучка</span>
-            <span>Готово для YouTube и презентации</span>
+      <details class="section section--compact compact-details youtube-details" id="youtube-video" aria-labelledby="youtube-video-title">
+        <summary>
+          <div class="section__head">
+            <p class="eyebrow">Для продюсеров YouTube</p>
+            <h2 id="youtube-video-title">YouTube 16:9: научпоп, мини-фильмы и документалки</h2>
+            <p class="section__lead">Горизонтальные AI-фрагменты с lip sync, озвучкой, музыкой и титрами.</p>
           </div>
-          <div class="youtube-offer__actions">
-            <a class="button button--primary" data-goal="youtube_teaser_telegram_click" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%20YouTube%2016%3A9%20AI-teaser.%0A%0A%D0%9D%D0%B8%D1%88%D0%B0%3A%0A%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%81%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B8%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A" target="_blank" rel="noopener">Обсудить YouTube teaser</a>
-            <a class="button button--ghost" data-goal="youtube_teaser_case_click" href="#cases">Смотреть кейс</a>
+        </summary>
+        <div class="youtube-offer">
+          <div class="youtube-offer__media">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              data-goal="youtube_teaser_video_play"
+              poster="assets/black-hole-video/checks/check-02s.png"
+              src="assets/black-hole-video/black-hole-60s-lipsync-titles-draft.mp4"
+            ></video>
+          </div>
+          <div class="youtube-offer__copy">
+            <p class="eyebrow">Science documentary</p>
+            <h2>BLACK HOLE - 60s science documentary</h2>
+            <p>
+              60-секундный горизонтальный научпоп для YouTube: ведущий с lip sync, четыре 15-секундных
+              AI-фрагмента, космические сцены, английская озвучка, музыка и титры.
+            </p>
+            <div class="youtube-offer__points" aria-label="Что входит в YouTube teaser">
+              <span>20-60 сек тестового фрагмента</span>
+              <span>Fantasy / documentary / mini-film</span>
+              <span>Английская или русская озвучка</span>
+              <span>Готово для YouTube и презентации</span>
+            </div>
+            <div class="youtube-offer__actions">
+              <a class="button button--primary" data-goal="youtube_teaser_telegram_click" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%20YouTube%2016%3A9%20AI-teaser.%0A%0A%D0%9D%D0%B8%D1%88%D0%B0%3A%0A%D0%A0%D0%B5%D1%84%D0%B5%D1%80%D0%B5%D0%BD%D1%81%3A%0A%D0%AF%D0%B7%D1%8B%D0%BA%20%D0%BE%D0%B7%D0%B2%D1%83%D1%87%D0%BA%D0%B8%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A" target="_blank" rel="noopener">Обсудить YouTube teaser</a>
+            </div>
           </div>
         </div>
-      </section>
+        <div class="youtube-offer youtube-offer--secondary">
+          <div class="youtube-offer__media">
+            <video
+              controls
+              playsinline
+              preload="metadata"
+              poster="assets/youtube-horizontal-demo/obsidian-map-preview.jpg"
+              src="assets/youtube-horizontal-demo/obsidian-map-full-35s-music2-voice-clear.mp4"
+            ></video>
+          </div>
+          <div class="youtube-offer__copy">
+            <p class="eyebrow">Fantasy teaser</p>
+            <h2>THE OBSIDIAN MAP - YouTube fantasy teaser</h2>
+            <p>
+              35-секундный горизонтальный AI-тизер: dark fantasy/documentary подача,
+              storyboard, генерация сцен, английская озвучка и cinematic score.
+            </p>
+            <a class="button button--ghost" href="assets/youtube-horizontal-demo/obsidian-map-full-35s-music2-voice-clear.mp4">Открыть Obsidian Map</a>
+          </div>
+        </div>
+      </details>
 
-      <section class="section" id="cases">
+      <section class="section" id="portfolio-library">
         <div class="section__head section__head--cases">
           <div>
             <p class="eyebrow">Spec-кейсы</p>
@@ -386,6 +446,12 @@
             <span><strong>9:16 / 16:9</strong> формат</span>
           </div>
         </div>
+        <details class="portfolio-archive" id="all-cases">
+          <summary>
+            <span>Показать остальные кейсы</span>
+            <small>Еще ролики: YouTube science/fantasy, Direct/Reels, ресторан, зоомагазин, beauty, barbershop, club, fashion, drink, SaaS, 3D product и creator pack</small>
+          </summary>
+          <div class="portfolio-archive__body">
         <article class="featured-case featured-case--horizontal featured-case--hero">
           <video
             controls
@@ -752,9 +818,18 @@
             <span>Маркетплейсы / сайт / ads</span>
           </article>
         </div>
+          </div>
+        </details>
       </section>
 
-      <section class="section section--compact" id="ai-video-ads">
+      <details class="section section--compact compact-details" id="ai-video-ads">
+        <summary>
+          <div class="section__head">
+            <p class="eyebrow">AI-видео для рекламы</p>
+            <h2>Что входит в рекламный AI-ролик</h2>
+            <p class="section__lead">Сценарий, визуальная концепция, генерация сцен, монтаж, титры, музыка или озвучка.</p>
+          </div>
+        </summary>
         <div class="seo-copy">
           <div>
             <p class="eyebrow">AI-видео для рекламы</p>
@@ -773,13 +848,15 @@
             </p>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="section section--compact" id="services">
+      <details class="section section--compact compact-details" id="services">
+        <summary>
         <div class="section__head">
           <p class="eyebrow">Что можно заказать</p>
           <h2>Форматы для быстрых коммерческих задач</h2>
         </div>
+        </summary>
         <div class="services">
           <div>
             <h3>AI-рекламный ролик</h3>
@@ -803,9 +880,10 @@
             <p>Аудит готового контента, ответы пользователям и аккуратное наполнение базы.</p>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="section section--compact spec-offer" id="spec-concept">
+      <details class="section section--compact compact-details spec-details" id="spec-concept">
+        <summary>
         <div class="spec-offer__content">
           <p class="eyebrow">Без съемки и бюджета на старт</p>
           <h2>Могу сделать 5-секундный spec-концепт под ваш продукт</h2>
@@ -815,6 +893,8 @@
             делаем полноценный ролик 10-15 секунд под заказ.
           </p>
         </div>
+        </summary>
+        <div class="spec-offer">
         <div class="spec-offer__panel">
           <span>Как это работает</span>
           <ol>
@@ -824,9 +904,11 @@
           </ol>
           <a class="button button--primary" data-goal="spec_concept_request" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%205-%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%D0%BD%D1%8B%D0%B9%20spec-%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%D0%BF%D1%82.%0A%0A%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%3A%0A%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%3A%0A%D0%93%D0%B4%D0%B5%20%D0%B1%D1%83%D0%B4%D0%B5%D1%82%20%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D1%8F%3A" target="_blank" rel="noopener">Предложить продукт</a>
         </div>
-      </section>
+        </div>
+      </details>
 
-      <section class="section section--compact spec-preview" aria-labelledby="spec-preview-title">
+      <details class="section section--compact compact-details spec-preview" aria-labelledby="spec-preview-title">
+        <summary>
         <div class="section__head">
           <p class="eyebrow">Примеры 5 секунд</p>
           <h2 id="spec-preview-title">Как выглядит короткий AI-концепт перед полноценным роликом</h2>
@@ -834,6 +916,7 @@
             Такие тизеры можно быстро показать бизнесу перед заказом ролика 10-15 секунд.
           </p>
         </div>
+        </summary>
         <div class="spec-preview__grid">
           <article>
             <video src="assets/spec-cuts/pet-mate-spec-5s.mp4" controls preload="metadata" playsinline></video>
@@ -860,9 +943,10 @@
             <p>Свет, энергия и быстрый teaser для клуба, сцены или event-площадки.</p>
           </article>
         </div>
-      </section>
+      </details>
 
-      <section class="section section--compact content-plans" id="content-plans">
+      <details class="section section--compact compact-details content-plans" id="content-plans">
+        <summary>
         <div class="section__head">
           <p class="eyebrow">Контент-креатор</p>
           <h2>Примеры контент-планов для Instagram, Reels и Shorts</h2>
@@ -871,6 +955,7 @@
             что показать, какой крючок использовать и к какому действию вести.
           </p>
         </div>
+        </summary>
         <div class="content-plan-grid">
           <article class="content-plan">
             <div class="content-plan__head">
@@ -1064,9 +1149,10 @@
             </div>
           </article>
         </div>
-      </section>
+      </details>
 
-      <section class="section section--compact content-management" id="content-management">
+      <details class="section section--compact compact-details content-management" id="content-management">
+        <summary>
         <div class="section__head">
           <p class="eyebrow">Интернет-магазин / база / Direct</p>
           <h2>Примеры задач контент-менеджера</h2>
@@ -1075,6 +1161,7 @@
             проверить карточки, подготовить базу товаров и отвечать пользователям в едином тоне бренда.
           </p>
         </div>
+        </summary>
         <div class="management-grid">
           <article class="management-card management-card--audit">
             <p class="case-card__tag">Анализ готового контента</p>
@@ -1162,17 +1249,19 @@
             </div>
           </article>
         </div>
-      </section>
+      </details>
 
-      <section class="section section--compact" id="packages">
+      <details class="section section--compact compact-details" id="packages">
+        <summary>
         <div class="section__head">
           <p class="eyebrow">Как начать</p>
-          <h2>Стартовые цены для первых клиентов</h2>
+          <h2>Стартовые цены: от 5 000 ₽</h2>
           <p class="section__lead">
             Сейчас можно зайти на проект дешевле обычной стоимости: это стартовые условия для первых клиентов,
             предложение ограничено по времени и не будет постоянным.
           </p>
         </div>
+        </summary>
         <div class="launch-offer">
           <div>
             <span>Стартовый оффер</span>
@@ -1226,14 +1315,16 @@
             <p>Генерирую сцены, собираю монтаж, титры, звук и отдаю готовый файл для публикации.</p>
           </div>
         </div>
-      </section>
+      </details>
 
-      <section class="section service-brief" aria-labelledby="brief-title">
+      <details class="section section--compact compact-details service-brief" aria-labelledby="brief-title">
+        <summary>
         <div>
           <p class="eyebrow">Бриф для старта</p>
           <h2 id="brief-title">Что прислать, чтобы быстро обсудить ролик</h2>
           <p class="section__lead">Не нужен длинный документ. Достаточно четырех пунктов, чтобы понять задачу и предложить формат.</p>
         </div>
+        </summary>
         <div class="brief-list">
           <span>Продукт или услуга</span>
           <span>Площадка: Reels, Shorts, Stories, сайт или реклама</span>
@@ -1241,7 +1332,7 @@
           <span>Срок и важные пожелания</span>
         </div>
         <a class="button button--telegram brief-button" href="https://telegram.me/igor_voit?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5.%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C%20AI-%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE.%0A%0A%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%20%D0%B8%D0%BB%D0%B8%20%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B0%3A%0A%D0%9F%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%3A%0A%D0%A1%D1%82%D0%B8%D0%BB%D1%8C%20%D0%B8%D0%B7%20%D0%BF%D0%BE%D1%80%D1%82%D1%84%D0%BE%D0%BB%D0%B8%D0%BE%3A%0A%D0%A1%D1%80%D0%BE%D0%BA%3A%0A%D0%9A%D0%BE%D0%BC%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%80%D0%B8%D0%B9%3A" target="_blank" rel="noopener">Заполнить бриф в Telegram</a>
-      </section>
+      </details>
 
       <section class="contact" id="contact">
         <div>
@@ -1283,7 +1374,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         var countNode = document.getElementById('portfolio-video-count');
-        var cases = document.getElementById('cases');
+        var cases = document.getElementById('portfolio-library');
 
         if (countNode && cases) {
           countNode.textContent = cases.querySelectorAll('video').length;
