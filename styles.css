@@ -265,6 +265,81 @@ h3 {
   border-right: 0;
 }
 
+.direction-picker {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 30px 0 12px;
+}
+
+.direction-picker__head {
+  max-width: 760px;
+  margin-bottom: 18px;
+}
+
+.direction-picker__head h2 {
+  font-size: clamp(26px, 3.6vw, 42px);
+}
+
+.direction-picker__head p {
+  max-width: 680px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.direction-picker__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.direction-card {
+  min-height: 184px;
+  display: grid;
+  align-content: space-between;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.025)),
+    #111618;
+}
+
+.direction-card:hover {
+  border-color: currentColor;
+  transform: translateY(-2px);
+}
+
+.direction-card span {
+  color: currentColor;
+  font-size: 13px;
+  font-weight: 950;
+}
+
+.direction-card h3 {
+  margin: 22px 0 10px;
+  font-size: clamp(21px, 2.4vw, 28px);
+}
+
+.direction-card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.direction-card--business {
+  color: var(--amber);
+}
+
+.direction-card--social {
+  color: var(--cyan);
+}
+
+.direction-card--youtube {
+  color: var(--green);
+}
+
 .reels-showcase {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -1549,6 +1624,7 @@ h3 {
   }
 
   .strip,
+  .direction-picker__grid,
   .case-grid,
   .seo-copy,
   .services,
