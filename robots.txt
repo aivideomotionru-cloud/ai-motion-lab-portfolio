@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/sitemap.xml
+Sitemap: https://aimotionlab.ru/sitemap.xml
