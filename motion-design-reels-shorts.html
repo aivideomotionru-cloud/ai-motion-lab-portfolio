@@ -78,6 +78,14 @@
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/110656408" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFKGVNB8F2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RFKGVNB8F2');
+    </script>
     <script>
       document.addEventListener('click', function (event) {
         var link = event.target.closest('a[href]');
@@ -94,6 +102,13 @@
           ym(110656408, 'reachGoal', goal, {
             href: link.href,
             text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+
+        if (goal && typeof gtag === 'function') {
+          gtag('event', goal, {
+            link_url: link.href,
+            link_text: (link.textContent || '').trim().slice(0, 80)
           });
         }
       });
