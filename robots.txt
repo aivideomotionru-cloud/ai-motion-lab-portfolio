@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://aimotionlab.ru/sitemap.xml
+Sitemap: https://aimotionlab.ru/sitemap.xml
 
