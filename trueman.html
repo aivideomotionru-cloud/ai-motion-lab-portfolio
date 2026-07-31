@@ -9,6 +9,7 @@
       content="Короткий 5-секундный Reels-концепт для TRUEMAN: вход, атмосфера барбершопа, мастер в работе и финальный logo lock."
     />
     <link rel="canonical" href="https://aimotionlab.ru/trueman.html" />
+    <meta name="robots" content="index, follow" />
     <meta property="og:type" content="video.other" />
     <meta property="og:locale" content="ru_RU" />
     <meta property="og:site_name" content="AI Motion Lab" />
@@ -42,6 +43,33 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-RFKGVNB8F2');
+    </script>
+    <script>
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href]');
+        var href = link ? link.getAttribute('href') || '' : '';
+        var goal = '';
+
+        if (href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
+        if (href.indexOf('t.me/ai_motion_lab_ru') !== -1) goal = 'contact_telegram_channel';
+        if (href.indexOf('vk.com/club240302298') !== -1) goal = 'contact_vk';
+        if (href.indexOf('mailto:') === 0) goal = 'contact_email';
+        if (href.indexOf('.mp4') !== -1) goal = 'open_video';
+
+        if (goal && typeof ym === 'function') {
+          ym(110656408, 'reachGoal', goal, {
+            href: link.href,
+            text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+
+        if (goal && typeof gtag === 'function') {
+          gtag('event', goal, {
+            link_url: link.href,
+            link_text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+      });
     </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
