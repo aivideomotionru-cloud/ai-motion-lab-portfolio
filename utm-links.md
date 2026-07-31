@@ -11,18 +11,6 @@ https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=tele
 Telegram post:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=telegram&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=post
 
-Instagram bio:
-https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=bio
-
-Instagram story:
-https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=story
-
-Instagram reels:
-https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=reels
-
-Instagram Direct:
-https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=direct&utm_campaign=ai_motion_portfolio&utm_content=dm
-
 VK community:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&utm_medium=social&utm_campaign=ai_motion_portfolio&utm_content=community
 
@@ -54,9 +42,6 @@ https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=vk&u
 
 Telegram spec post:
 https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=telegram&utm_medium=social&utm_campaign=spec_concept&utm_content=post#spec-concept
-
-Instagram Direct spec:
-https://aivideomotionru-cloud.github.io/ai-motion-lab-portfolio/?utm_source=instagram&utm_medium=direct&utm_campaign=spec_concept&utm_content=dm#spec-concept
 
 ## How to read in Yandex Metrika
 

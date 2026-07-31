@@ -7,6 +7,11 @@ Language: Russian
 Market: Russia
 Contact: hello@aimotionlab.ru
 
+Important pages:
+- https://aimotionlab.ru/ai-video-for-business.html — AI video for business, Reels, Shorts, Stories, and social advertising
+- https://aimotionlab.ru/ai-ads-for-business.html — AI advertising videos for business
+- https://aimotionlab.ru/video-iz-foto-dlya-biznesa.html — practical article about making a short advertising video from one business photo
+
 Services:
 - AI advertising videos for Reels, Shorts, Stories, and social ads
 - Motion design packs for creators and brands

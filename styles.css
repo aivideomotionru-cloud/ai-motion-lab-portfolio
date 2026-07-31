@@ -215,12 +215,6 @@ h3 {
   color: #ffffff;
 }
 
-.button--instagram {
-  border-color: #e1306c;
-  background: linear-gradient(135deg, #f58529 0%, #dd2a7b 48%, #8134af 100%);
-  color: #ffffff;
-}
-
 .button--vk {
   border-color: #0077ff;
   background: #0077ff;
@@ -502,9 +496,15 @@ h3 {
   box-shadow: 0 22px 70px rgba(255, 93, 108, 0.07);
 }
 
+.page-entry__card--article {
+  border-color: rgba(134, 217, 112, 0.42);
+  box-shadow: 0 22px 70px rgba(134, 217, 112, 0.06);
+}
+
 .page-entry__card--motion::after,
 .page-entry__card--product::after,
-.page-entry__card--ads::after {
+.page-entry__card--ads::after,
+.page-entry__card--article::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -516,8 +516,51 @@ h3 {
 .page-entry__card--soon h3,
 .page-entry__card--motion h3,
 .page-entry__card--product h3,
-.page-entry__card--ads h3 {
+.page-entry__card--ads h3,
+.page-entry__card--article h3 {
   font-size: clamp(24px, 3vw, 34px);
+}
+
+.article-hub {
+  padding-top: 34px;
+  padding-bottom: 44px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.article-hub__grid {
+  display: grid;
+  gap: 18px;
+}
+
+.article-hub__card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.article-hub__card img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.article-hub__card h3 {
+  max-width: 680px;
+  font-size: clamp(26px, 3.4vw, 42px);
+}
+
+.article-hub__card p {
+  max-width: 660px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.58;
 }
 
 .section {
@@ -1528,6 +1571,156 @@ h3 {
   line-height: 1.65;
 }
 
+.article-hero {
+  min-height: 68svh;
+}
+
+.article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.article-meta span,
+.article-toc,
+.article-note {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.article-meta span {
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.article-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: 42px;
+  align-items: start;
+}
+
+.article-toc {
+  position: sticky;
+  top: 18px;
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+}
+
+.article-toc strong {
+  margin-bottom: 4px;
+}
+
+.article-toc a {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.article-toc a:hover {
+  color: var(--text);
+}
+
+.article-body {
+  display: grid;
+  gap: 54px;
+}
+
+.article-body section {
+  scroll-margin-top: 24px;
+}
+
+.article-body h2 {
+  max-width: 820px;
+}
+
+.article-body p,
+.article-checklist li {
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.66;
+}
+
+.article-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.article-grid div {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.article-grid p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.article-note {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 22px;
+}
+
+.article-note strong {
+  color: var(--cyan);
+}
+
+.article-note span {
+  color: var(--muted);
+  line-height: 1.58;
+}
+
+.article-process {
+  margin-top: 24px;
+}
+
+.article-checklist {
+  display: grid;
+  gap: 12px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-checklist li {
+  padding: 14px 16px;
+  border-left: 3px solid var(--cyan);
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.article-related {
+  padding-top: 34px;
+  border-top: 1px solid var(--line);
+}
+
+.article-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.article-links a {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  font-weight: 800;
+}
+
 .service-video-grid {
   display: grid;
   gap: 18px;
@@ -1747,8 +1940,15 @@ h3 {
   .service-strip,
   .service-copy,
   .service-example,
-  .audience-list {
+  .audience-list,
+  .article-layout,
+  .article-grid,
+  .article-hub__card {
     grid-template-columns: 1fr;
+  }
+
+  .article-toc {
+    position: static;
   }
 
   .service-stat {
