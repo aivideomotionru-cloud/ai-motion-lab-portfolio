@@ -563,6 +563,44 @@ h3 {
   line-height: 1.58;
 }
 
+.experiment-hub {
+  padding-top: 34px;
+  padding-bottom: 44px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.experiment-hub__body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+}
+
+.experiment-hub__metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.experiment-hub__metrics span {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.04);
+  line-height: 1.45;
+}
+
+.experiment-hub__metrics strong {
+  margin-right: 8px;
+  color: var(--text);
+  font-size: 28px;
+}
+
 .section {
   width: min(1160px, calc(100% - 40px));
   margin: 0 auto;
@@ -1745,6 +1783,60 @@ h3 {
   font-weight: 800;
 }
 
+.experiment-list {
+  display: grid;
+  gap: 24px;
+}
+
+.experiment-entry {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.experiment-entry h2 {
+  margin-top: 0;
+}
+
+.experiment-entry__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 18px;
+}
+
+.experiment-entry__meta span {
+  padding: 8px 10px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.experiment-table {
+  width: 100%;
+  margin-top: 18px;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.experiment-table th,
+.experiment-table td {
+  padding: 12px;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  text-align: left;
+  vertical-align: top;
+}
+
+.experiment-table th {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .service-video-grid {
   display: grid;
   gap: 18px;
@@ -1967,8 +2059,19 @@ h3 {
   .audience-list,
   .article-layout,
   .article-grid,
+  .experiment-hub__body,
+  .experiment-hub__metrics,
   .article-hub__card {
     grid-template-columns: 1fr;
+  }
+
+  .experiment-hub__body {
+    align-items: stretch;
+  }
+
+  .experiment-table {
+    display: block;
+    overflow-x: auto;
   }
 
   .article-toc {

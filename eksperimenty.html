@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://aimotionlab.ru/favicon.ico" sizes="any" />
+    <link rel="shortcut icon" href="https://aimotionlab.ru/favicon.ico" />
+    <link rel="icon" href="https://aimotionlab.ru/favicon-48x48.png" type="image/png" sizes="48x48" />
+    <link rel="icon" href="https://aimotionlab.ru/favicon.png" type="image/png" sizes="120x120" />
+    <link rel="apple-touch-icon" href="https://aimotionlab.ru/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#0b111b" />
+    <title>Журнал экспериментов AI Motion Lab: короткие ролики, гипотезы и статистика</title>
+    <meta
+      name="description"
+      content="Журнал AI Motion Lab: какие короткие ролики тестируем, какие хуки проверяем в VK Клипы и YouTube Shorts, какие первые метрики смотрим и что меняем дальше."
+    />
+    <link rel="canonical" href="https://aimotionlab.ru/eksperimenty.html" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="AI Motion Lab" />
+    <meta property="og:title" content="Журнал экспериментов AI Motion Lab" />
+    <meta property="og:description" content="Короткие ролики, гипотезы, первые замеры и выводы для новых публикаций." />
+    <meta property="og:url" content="https://aimotionlab.ru/eksperimenty.html" />
+    <meta property="og:image" content="https://aimotionlab.ru/assets/hero-ai-motion.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Журнал экспериментов AI Motion Lab" />
+    <meta name="twitter:description" content="Лабораторный журнал коротких AI-роликов: гипотезы, публикации, статистика и выводы." />
+    <meta name="twitter:image" content="https://aimotionlab.ru/assets/hero-ai-motion.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": "https://aimotionlab.ru/eksperimenty.html#page",
+            "name": "Журнал экспериментов AI Motion Lab",
+            "description": "Журнал коротких AI-роликов: гипотезы, публикации, первые метрики и выводы.",
+            "url": "https://aimotionlab.ru/eksperimenty.html",
+            "inLanguage": "ru-RU",
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "AI Motion Lab",
+              "url": "https://aimotionlab.ru/"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://aimotionlab.ru/eksperimenty.html#breadcrumbs",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "AI Motion Lab",
+                "item": "https://aimotionlab.ru/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Журнал экспериментов",
+                "item": "https://aimotionlab.ru/eksperimenty.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(m,e,t,r,i,k,a){
+          m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+          m[i].l=1*new Date();
+          for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+          k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+      })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110656408', 'ym');
+
+      ym(110656408, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/110656408" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFKGVNB8F2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RFKGVNB8F2');
+    </script>
+    <script>
+      document.addEventListener('click', function (event) {
+        var link = event.target.closest('a[href]');
+        var href = link ? link.getAttribute('href') || '' : '';
+        var goal = link ? link.dataset.goal || '' : '';
+
+        if (!goal && href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
+        if (!goal && href.indexOf('t.me/ai_motion_lab_ru') !== -1) goal = 'contact_telegram_channel';
+        if (!goal && href.indexOf('vk.com/club240302298') !== -1) goal = 'contact_vk';
+        if (!goal && href.indexOf('mailto:') === 0) goal = 'contact_email';
+        if (!goal && href.indexOf('.mp4') !== -1) goal = 'open_video';
+
+        if (goal && typeof ym === 'function') {
+          ym(110656408, 'reachGoal', goal, {
+            href: link.href,
+            text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+
+        if (goal && typeof gtag === 'function') {
+          gtag('event', goal, {
+            link_url: link.href,
+            link_text: (link.textContent || '').trim().slice(0, 80)
+          });
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <header class="hero service-hero article-hero">
+      <img class="hero__image" src="assets/hero-ai-motion.png" alt="Журнал экспериментов AI Motion Lab" />
+      <nav class="nav" aria-label="Основная навигация">
+        <a class="brand" href="index.html">AI Motion Lab</a>
+        <div class="nav__links">
+          <a href="index.html#cases">Портфолио</a>
+          <a href="index.html#articles">Статьи</a>
+          <a href="korotkiy-rolik-petlya-vk-shorts.html">Петля</a>
+          <a href="motion-design-reels-shorts.html">Reels и Shorts</a>
+          <a href="#contact">Контакты</a>
+        </div>
+      </nav>
+      <section class="hero__content service-hero__content">
+        <p class="eyebrow">Лаборатория роста</p>
+        <h1>Журнал экспериментов: короткие ролики, гипотезы и первые замеры</h1>
+        <p class="lead">
+          Здесь фиксируются не красивые обещания, а рабочие проверки: какой хук использовали,
+          где публиковали ролик, какие цифры увидели и какой вывод забираем в следующий тест.
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#log">Смотреть записи</a>
+          <a class="button button--ghost" href="index.html">На главную</a>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="section article-meta" aria-label="Информация о журнале">
+        <span>Обновлено: 2 августа 2026</span>
+        <span>Фокус: VK Клипы, YouTube Shorts, сайт</span>
+        <span>Метрики: просмотры, охват, комментарии, GA4</span>
+      </section>
+
+      <article class="section article-layout">
+        <aside class="article-toc" aria-label="Содержание">
+          <strong>В журнале</strong>
+          <a href="#principles">Как читаем цифры</a>
+          <a href="#log">Записи экспериментов</a>
+          <a href="#site-stats">Статистика сайта</a>
+          <a href="#next">Что делаем дальше</a>
+        </aside>
+
+        <div class="article-body">
+          <section id="principles">
+            <p class="eyebrow">Правило журнала</p>
+            <h2>Сначала гипотеза, потом публикация, потом холодный замер</h2>
+            <p>
+              Один ролик не доказывает формат. Но серия коротких роликов быстро показывает, что площадка хотя бы
+              начинает тестировать, а что остается внутри профиля без внешнего охвата. Поэтому мы фиксируем не только
+              просмотры, но и механику ролика: тему, хук, вопрос, длину, площадку и ранние сигналы.
+            </p>
+            <div class="article-note">
+              <strong>Что считаем полезным сигналом:</strong>
+              <span>первые показы за пределами своих аккаунтов, комментарии по заданному вопросу, повторные просмотры, переходы на сайт и рост доли органического поиска.</span>
+            </div>
+          </section>
+
+          <section id="log">
+            <p class="eyebrow">Записи</p>
+            <h2>Текущие эксперименты</h2>
+            <div class="experiment-list">
+              <article class="experiment-entry">
+                <div class="experiment-entry__meta">
+                  <span>2 августа 2026</span>
+                  <span>Cyber butterfly loop</span>
+                  <span>VK + YouTube Shorts + сайт</span>
+                </div>
+                <h2>Где тут начало?</h2>
+                <p>
+                  Проверяли короткую 6-секундную петлю: быстрый визуальный въезд, кибер-бабочка, вопрос на экране
+                  и призыв написать таймкод. Идея не рекламная, а удерживающая: зритель должен захотеть пересмотреть,
+                  чтобы найти момент склейки.
+                </p>
+                <table class="experiment-table">
+                  <thead>
+                    <tr>
+                      <th>Площадка</th>
+                      <th>Первый замер</th>
+                      <th>Вывод</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>YouTube Shorts</td>
+                      <td>0 просмотров с момента публикации, 0 за последние 60 минут.</td>
+                      <td>Ролик пока не получил тестовую аудиторию. Видео не трогаем, снимаем повторный замер позже.</td>
+                    </tr>
+                    <tr>
+                      <td>VK личный профиль и сообщество</td>
+                      <td>Публикация сделана в двух местах, комментарий-провокация используется как часть теста.</td>
+                      <td>Нужно сравнивать личный профиль и сообщество отдельно: у маленького сообщества стартовый охват слабее.</td>
+                    </tr>
+                    <tr>
+                      <td>Сайт</td>
+                      <td>Ролик встроен в статью о короткой петле.</td>
+                      <td>Материал работает как SEO-заметка и как доказательство процесса, а не как рекламная витрина.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+
+              <article class="experiment-entry">
+                <div class="experiment-entry__meta">
+                  <span>29-30 июля 2026</span>
+                  <span>Старые зарядки</span>
+                  <span>VK Клипы</span>
+                </div>
+                <h2>А вдруг пригодится?</h2>
+                <p>
+                  Проверяли бытовой крючок: поиск старых зарядок по дому, рост счетчика и финальный вопрос
+                  “выбросить или оставить?”. Этот формат ближе к массовому поведению зрителя, чем абстрактный визуал.
+                </p>
+                <table class="experiment-table">
+                  <thead>
+                    <tr>
+                      <th>Сигнал</th>
+                      <th>Что заметили</th>
+                      <th>Что забираем дальше</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Хук</td>
+                      <td>Бытовая узнаваемость понятна без объяснений.</td>
+                      <td>Для охватных тестов чаще брать темы “это есть у каждого дома”.</td>
+                    </tr>
+                    <tr>
+                      <td>Удержание</td>
+                      <td>Счетчик помогает вести зрителя через повторяющиеся кадры.</td>
+                      <td>Использовать счетчики, списки, таймеры и накопление предметов.</td>
+                    </tr>
+                    <tr>
+                      <td>Комментарий</td>
+                      <td>Финальный вопрос должен быть не рекламным, а спорным или узнаваемым.</td>
+                      <td>CTA формулировать как короткий ответ зрителя, а не как “подпишись”.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </article>
+            </div>
+          </section>
+
+          <section id="site-stats">
+            <p class="eyebrow">GA4</p>
+            <h2>Сайт уже считает события, но органика только начинается</h2>
+            <p>
+              Последний замер Google Analytics за 7 дней: 44 активных пользователя, 172 события, 44 новых пользователя
+              и 1 активный пользователь за последние 30 минут. Каналы: Direct - 45 сеансов, Referral - 2,
+              Organic Search - 1, Unassigned - 1.
+            </p>
+            <p>
+              Это нормальная ранняя картина для нового сайта. Сейчас задача не ждать мгновенную выдачу, а регулярно
+              добавлять полезные страницы, связывать их между собой и смотреть, растет ли доля поискового трафика.
+            </p>
+          </section>
+
+          <section id="next">
+            <p class="eyebrow">Следующий шаг</p>
+            <h2>Дальше нужны серии, а не одиночные ставки</h2>
+            <p>
+              Следующий ролик лучше строить вокруг более массовой темы: бытовая нелогичность, предметный перебор,
+              визуальная загадка или ситуация, где зритель сразу узнает себя. Для сайта параллельно продолжаем
+              публиковать короткие разборы: каждый эксперимент превращается в страницу, которая остается в поиске.
+            </p>
+          </section>
+        </div>
+      </article>
+
+      <section class="contact" id="contact">
+        <div>
+          <p class="eyebrow">Контакт</p>
+          <h2>Можно обсудить ролик или серию тестов</h2>
+          <p class="contact__note">
+            Опишите продукт, площадку и цель. Если задача не в продаже, а в охвате, сначала подберем крючок для внимания.
+          </p>
+        </div>
+        <div class="contact__actions">
+          <a class="button button--telegram" href="https://telegram.me/igor_voit" target="_blank" rel="noopener">Написать в Telegram</a>
+          <a class="button button--telegram" href="https://t.me/ai_motion_lab_ru" target="_blank" rel="noopener">Смотреть канал</a>
+          <a class="button button--ghost" href="mailto:hello@aimotionlab.ru?subject=Серия%20коротких%20роликов&body=Здравствуйте.%20Хочу%20обсудить%20серию%20коротких%20роликов.%0A%0AЧто%20показываем:%0AГде%20публикуем:%0AЦель:%0AМатериалы:">Написать на почту</a>
+          <a class="button button--ghost" href="index.html">Вернуться на главную</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

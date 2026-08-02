@@ -109,13 +109,13 @@
       document.addEventListener('click', function (event) {
         var link = event.target.closest('a[href]');
         var href = link ? link.getAttribute('href') || '' : '';
-        var goal = '';
+        var goal = link ? link.dataset.goal || '' : '';
 
-        if (href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
-        if (href.indexOf('t.me/ai_motion_lab_ru') !== -1) goal = 'contact_telegram_channel';
-        if (href.indexOf('vk.com/club240302298') !== -1) goal = 'contact_vk';
-        if (href.indexOf('mailto:') === 0) goal = 'contact_email';
-        if (href.indexOf('.mp4') !== -1) goal = 'open_video';
+        if (!goal && href.indexOf('telegram.me/igor_voit') !== -1) goal = 'contact_telegram';
+        if (!goal && href.indexOf('t.me/ai_motion_lab_ru') !== -1) goal = 'contact_telegram_channel';
+        if (!goal && href.indexOf('vk.com/club240302298') !== -1) goal = 'contact_vk';
+        if (!goal && href.indexOf('mailto:') === 0) goal = 'contact_email';
+        if (!goal && href.indexOf('.mp4') !== -1) goal = 'open_video';
 
         if (goal && typeof ym === 'function') {
           ym(110656408, 'reachGoal', goal, {
@@ -130,6 +130,28 @@
             link_text: (link.textContent || '').trim().slice(0, 80)
           });
         }
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('video').forEach(function (video) {
+          video.addEventListener('play', function () {
+            if (video.dataset.goalTracked) return;
+            video.dataset.goalTracked = 'true';
+            var eventName = video.dataset.goal || 'video_play';
+            var videoSrc = video.currentSrc || video.getAttribute('src') || '';
+            if (typeof ym === 'function') {
+              ym(110656408, 'reachGoal', eventName, {
+                src: videoSrc
+              });
+            }
+            if (typeof gtag === 'function') {
+              gtag('event', eventName, {
+                video_src: videoSrc,
+                video_label: video.closest('article, figure, section')?.textContent.trim().slice(0, 80) || ''
+              });
+            }
+          });
+        });
       });
     </script>
   </head>
@@ -199,6 +221,7 @@
                 playsinline
                 loop
                 preload="metadata"
+                data-goal="article_loop_video_play"
                 poster="assets/articles/cyber-butterfly-loop-timecode-poster.jpg"
                 src="assets/articles/cyber-butterfly-loop-timecode-vk.mp4"
               ></video>

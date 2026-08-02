@@ -263,6 +263,7 @@
           <a href="#cases">Кейсы</a>
           <a class="nav__link--youtube" href="#youtube-video">YouTube 16:9</a>
           <a href="#services">Услуги</a>
+          <a href="eksperimenty.html" data-goal="open_experiment_journal">Журнал</a>
           <a class="nav__link--featured" href="#service-pages">Страницы услуг</a>
           <a href="#packages">Пакеты</a>
           <a href="#contact">Контакты</a>
@@ -411,6 +412,25 @@
         </div>
       </details>
 
+      <section class="section experiment-hub" id="experiments" aria-labelledby="experiments-title">
+        <div class="section__head">
+          <p class="eyebrow">Лаборатория роста</p>
+          <h2 id="experiments-title">Журнал экспериментов: ролики, гипотезы, первые замеры и выводы</h2>
+          <p class="section__lead">
+            Фиксируем не только готовые видео, но и путь: какой хук проверяли, где публиковали,
+            что показали первые просмотры и какой вывод забираем в следующий ролик.
+          </p>
+        </div>
+        <div class="experiment-hub__body">
+          <div class="experiment-hub__metrics" aria-label="Последний замер">
+            <span><strong>44</strong> активных пользователя сайта за 7 дней</span>
+            <span><strong>1</strong> Organic Search в GA4</span>
+            <span><strong>0</strong> просмотров YouTube Short на первом замере</span>
+          </div>
+          <a class="button button--primary" href="eksperimenty.html" data-goal="open_experiment_journal">Открыть журнал</a>
+        </div>
+      </section>
+
       <section class="section article-hub" id="articles" aria-labelledby="articles-title">
         <div class="section__head">
           <p class="eyebrow">Разборы для бизнеса</p>
@@ -421,7 +441,7 @@
           </p>
         </div>
         <div class="article-hub__grid">
-          <a class="article-hub__card" href="korotkiy-rolik-petlya-vk-shorts.html">
+          <a class="article-hub__card" href="korotkiy-rolik-petlya-vk-shorts.html" data-goal="open_article_loop_video">
             <img src="assets/hero-ai-motion.png" alt="Короткий ролик-петля для VK Клипов и YouTube Shorts" />
             <div>
               <span class="case-card__tag">Лабораторная заметка</span>
@@ -432,7 +452,7 @@
               <span class="page-entry__button">Читать статью</span>
             </div>
           </a>
-          <a class="article-hub__card" href="video-iz-foto-dlya-biznesa.html">
+          <a class="article-hub__card" href="video-iz-foto-dlya-biznesa.html" data-goal="open_article_photo_to_video">
             <img src="assets/hero-ai-motion.png" alt="Как сделать рекламный ролик из одного фото" />
             <div>
               <span class="case-card__tag">Первая статья</span>
@@ -1443,19 +1463,21 @@
           countNode.textContent = cases.querySelectorAll('video').length;
         }
 
-        document.querySelectorAll('video[data-goal]').forEach(function (video) {
+        document.querySelectorAll('video').forEach(function (video) {
           video.addEventListener('play', function () {
             if (video.dataset.goalTracked) return;
             video.dataset.goalTracked = 'true';
+            var eventName = video.dataset.goal || 'video_play';
             var videoSrc = video.currentSrc || video.getAttribute('src') || '';
             if (typeof ym === 'function') {
-              ym(110656408, 'reachGoal', video.dataset.goal, {
+              ym(110656408, 'reachGoal', eventName, {
                 src: videoSrc
               });
             }
             if (typeof gtag === 'function') {
-              gtag('event', video.dataset.goal, {
-                video_src: videoSrc
+              gtag('event', eventName, {
+                video_src: videoSrc,
+                video_label: video.getAttribute('aria-label') || video.closest('article, figure, section')?.textContent.trim().slice(0, 80) || ''
               });
             }
           });
