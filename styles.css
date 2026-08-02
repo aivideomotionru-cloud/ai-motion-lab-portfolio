@@ -1682,6 +1682,30 @@ h3 {
   line-height: 1.58;
 }
 
+.article-video {
+  display: grid;
+  gap: 10px;
+  width: min(360px, 100%);
+  margin: 28px auto 0;
+}
+
+.article-video video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 9 / 16;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #05070b;
+  object-fit: cover;
+}
+
+.article-video figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: center;
+}
+
 .article-process {
   margin-top: 24px;
 }
