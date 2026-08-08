@@ -1613,6 +1613,21 @@ h3 {
   min-height: 68svh;
 }
 
+.photo-check-hero::after {
+  background:
+    linear-gradient(90deg, rgba(9, 12, 14, 0.76) 0%, rgba(9, 12, 14, 0.52) 38%, rgba(9, 12, 14, 0.16) 64%, rgba(9, 12, 14, 0.03) 100%),
+    linear-gradient(0deg, var(--bg) 0%, rgba(13, 17, 19, 0.44) 12%, rgba(13, 17, 19, 0) 34%);
+}
+
+.photo-check-hero .hero__image {
+  filter: brightness(1.08) saturate(1.04);
+}
+
+.photo-check-hero h1,
+.photo-check-hero .lead {
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
+}
+
 .article-meta {
   display: flex;
   flex-wrap: wrap;
