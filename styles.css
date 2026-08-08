@@ -1744,6 +1744,28 @@ h3 {
   text-align: center;
 }
 
+.article-image {
+  display: grid;
+  gap: 10px;
+  margin: 28px 0 0;
+}
+
+.article-image img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #05070b;
+  object-fit: cover;
+}
+
+.article-image figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
 .article-process {
   margin-top: 24px;
 }
