@@ -1613,6 +1613,22 @@ h3 {
   min-height: 68svh;
 }
 
+.ready-result-hero::after {
+  background:
+    linear-gradient(90deg, rgba(9, 12, 14, 0.18) 0%, rgba(9, 12, 14, 0.09) 43%, rgba(9, 12, 14, 0) 100%),
+    linear-gradient(0deg, var(--bg) 0%, rgba(13, 17, 19, 0.08) 18%, rgba(13, 17, 19, 0) 42%);
+}
+
+.ready-result-hero .hero__image {
+  filter: brightness(1.28) saturate(1.04);
+}
+
+.ready-result-hero .eyebrow,
+.ready-result-hero h1,
+.ready-result-hero .lead {
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.42);
+}
+
 .photo-check-hero::after {
   background:
     linear-gradient(90deg, rgba(9, 12, 14, 0.64) 0%, rgba(9, 12, 14, 0.38) 36%, rgba(9, 12, 14, 0.08) 62%, rgba(9, 12, 14, 0) 100%),
